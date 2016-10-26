@@ -1,1 +1,38 @@
-
+.old-price{
+	text-decoration: line-through;
+}
+.product{
+	margin-top: 20px;
+}
+h1.text-center {
+    font-size: 19px;
+}
+.old-price {
+    text-decoration: line-through;
+    height: 17px;
+    font-size: 12px;
+}
+.thumbnail{padding: 20px}
+p.price {
+    font-size: 20px;
+    color: #47474c;
+}
+.thumbnail:hover {
+    box-shadow: 2px 2px 2px #ececec;
+}
+.thumbnail img{
+	-webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: 0.8
+}
+.thumbnail:hover img{
+	-webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: 0.9
+}
