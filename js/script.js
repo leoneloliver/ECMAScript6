@@ -27,11 +27,8 @@ class Product{
 			column.classList.add("col-lg-4");
 
 			thumbnail.classList.add("thumbnail");
-
 			title.classList.add("text-center");
-
 			old_price.classList.add("old-price");
-
 			price.classList.add("price");
 
 			btn.classList.add("btn");
@@ -41,17 +38,14 @@ class Product{
 			btn.innerHTML = "Buy";
 
 			title.innerHTML = product.name;
-
 			image.setAttribute("src",product.image);
 
 			if(product.promo == true){
 				old_price.innerHTML = "R$ "+ product.price;
 				price.innerHTML = "R$ "+ (product.price - product.desc);
 			}else{
-				//old_price.setAttribute("display","none");
 				price.innerHTML = "CAD$ "+ product.price;
 			}
-
 			thumbnail.appendChild(title);
 			thumbnail.appendChild(image);
 			thumbnail.appendChild(old_price);
@@ -59,7 +53,6 @@ class Product{
 			thumbnail.appendChild(btn);
 
 			column.appendChild(thumbnail);
-
 			list.appendChild(column);
 		}
 	}
@@ -91,6 +84,5 @@ var products = [
 		desc: null
 	},
 ]
-
 let product = new Product();
 product.list(products);
